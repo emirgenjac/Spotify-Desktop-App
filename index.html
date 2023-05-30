@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Desktop App</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">         
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="assets/Home.svg" alt="home" class="gray-filtered">
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="assets/Search.svg" alt="home" class="gray-filtered">
+                                <span>Search</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="assets/YourLibrary.svg" alt="home" class="gray-filtered">
+                                <span>Your Library</span>
+                            </a>
+                        </li>
+                        <div style="height: 20px;"></div>
+                        <li>
+                            <a href="#">
+                                <img src="assets/CreatePlaylist.svg" alt="home" class="gray-filtered">
+                                <span>Create Playlist</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="assets/Like.svg" alt="home" class="gray-filtered">
+                                <span>Liked Songs</span>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+            <hr width="100%">
+            <div style="height: 20px;"></div>
+            <div class="menu playlists">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>Goated</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>Klasikica</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>Old School</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>KOMERCIJALA</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>Ahbab</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>JIM</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>EMINEM, Level Up</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>Iconic Film Music</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>Futura</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>Kvalitetni Proizvodi</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>EGO</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>Mood</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="current-song-cover">
+                <img src="images/song-cover.jpg" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <div class="playlist-header">
+                <div class="playlist-top">
+                    <div class="playlist-arrows">
+                        <div class="arrow-container">
+                            <img src="assets/LeftArrow.svg" alt="">
+                        </div>
+                        <div class="arrow-container">
+                            <img src="assets/RightArrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="playlist-top-email">
+                        <div class="arrow-container">
+                            <img src="assets/Profile.svg" alt="">
+                        </div>
+                        <span>emir.genjac...</span>
+                    </div>
+                </div>
+                <div class="playlist-content">
+                    <div class="playlist-cover">
+                        <img src="images/hiphop.jpg" alt="">
+                    </div>
+                    <div class="playlist-info">
+                        <div class="playlist-public">PUBLIC PLAYLIST</div>
+                        <div class="playlist-title">
+                            Old School Rap
+                        </div>
+                        <div class="playlist-description">
+                            Rap Sheet To Keep You Going.
+                        </div>
+                        <div class="playlist-stats">
+                            <img src="assets/spotify-logo.png" alt="" width="24px" height="24px">
+                            <span>Spotify ·</span>
+                            <span>5,133,282 likes ·</span>
+                            <span>121 songs,</span>
+                            <span style="font-weight: 200;">6 hr 59 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist-songs-container">
+                <div class="playlist-buttons">
+                    <div class="playlist-buttons-left">
+                        <div class="playlist-buttons-resume-pause">
+                            <img src="assets/Pause.svg" alt="">
+                        </div>
+
+                        <div class="playlist-buttons-like">
+                            <img src="assets/FiiledLike.svg" alt="" class="spotify-color">
+                        </div>
+
+                        <div class="playlist-buttons-download">
+                            <img src="assets/Download.svg" alt="">
+                        </div>
+
+                        <div class="playlist-buttons-three-dot">
+                            <img src="assets/ThreeDots.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="playlist-buttons-right">
+                        <div class="playlist-buttons-search">
+                            <img src="assets/Search.svg" alt="">
+                        </div>
+
+                        <div class="playlist-buttons-order">
+                            Custom Order
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="playlist-songs">
+                    <table>
+                        <tr>
+                            <th>#</th>
+                            <th>TITLE</th>
+                            <th>ALBUM</th>
+                            <th>DATE ADDED</th>
+                            <th><img src="assets/Duration.svg" alt=""></th>
+                        </tr>
+
+                        <tr style="height: 20px;">
+
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/song-cover.jpeg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        PRIDE.
+                                    </div>
+                                    <div class="song-artist">Kendrick Lamar</div>
+                                </div>
+                            </td>
+                            <td class="song-album">DAMN</td>
+                            <td class="song-date-added">Nov 12, 2018</td>
+                            <td class="song-duration">3:49</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/drake.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                    Rich Flex   
+                                    </div>
+                                    <div class="song-artist">Drake</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Her Loss</td>
+                            <td class="song-date-added">Dec 14, 2022</td>
+                            <td class="song-duration">3:59</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/logic.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Confessions of a Dangerous Mind
+                                    </div>
+                                    <div class="song-artist">Logic</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Confessions of a Dangerous Mind</td>
+                            <td class="song-date-added">Mar 2, 2017</td>
+                            <td class="song-duration">4:07</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/weekend.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Blinding Lights
+                                    </div>
+                                    <div class="song-artist">The Weeknd</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Save Your Tears</td>
+                            <td class="song-date-added">Apr 5, 2018</td>
+                            <td class="song-duration">2:19</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/nwa.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Fuck Tha Police.
+                                    </div>
+                                    <div class="song-artist">N.W.A</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Straight Outta Compton</td>
+                            <td class="song-date-added">Jun 8, 1990</td>
+                            <td class="song-duration">3:50</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/cudi.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                       Day 'N' Nite 
+                                    </div>
+                                    <div class="song-artist">Kid Cudi</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Man on The Moon</td>
+                            <td class="song-date-added">Jan 1, 2009</td>
+                            <td class="song-duration">3:41</td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/sinan.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Trezan
+                                    </div>
+                                    <div class="song-artist">Sinan Sakić</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Na Ex</td>
+                            <td class="song-date-added">Nov 2, 2002</td>
+                            <td class="song-duration">3:20</td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/vlv.png" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Viva La Vida
+                                    </div>
+                                    <div class="song-artist">Coldplay</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Viva La Vida or Death and All His Friends</td>
+                            <td class="song-date-added">Mar 23, 2008</td>
+                            <td class="song-duration">4:02</td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/2pac.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Hit 'Em Up
+                                    </div>
+                                    <div class="song-artist">2Pac</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Greatest Hits</td>
+                            <td class="song-date-added">May 9, 1998</td>
+                            <td class="song-duration">5:12</td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/50cent.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Many Men (Wish Death)
+                                    </div>
+                                    <div class="song-artist">50 Cent</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Get Rich Or Die Tryin'</td>
+                            <td class="song-date-added">Oct 29, 2003</td>
+                            <td class="song-duration">4:16</td>
+                        </tr>
+
+
+                        
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-player">
+        <div class="footer-player-left">
+            <div class="footer-player-left-song">
+                <div class="footer-player-left-song-name">PRIDE.</div>
+                <div class="footer-player-left-song-artist">Kendrick Lamar</div>
+            </div>
+
+            <div class="footer-player-left-like">
+                <img src="assets/FiiledLike.svg" alt="">
+            </div>
+        </div>
+
+        <div class="footer-player-middle">
+            <div class="footer-player-middle-buttons">
+                <img src="assets/Shuffle.svg" alt="" class="gray-filtered">
+                <img src="assets/Previous.svg" alt="" class="gray-filtered">
+                <div class="pause-button">
+                    <img src="assets/Pause.svg" alt="">
+                </div>
+                <img src="assets/Next.svg" alt="" class="gray-filtered">
+                <img src="assets/Repeat.svg" alt="" class="gray-filtered">
+            </div>
+
+            <div class="footer-player-middle-slider">
+                <div class="player-time">1:12</div>
+                <div class="player-slider">
+                    <input type="range" min="1" max="100" value="40">
+                </div>
+                <div class="player-time">3:39</div>
+            </div>
+        </div>
+
+        <div class="footer-player-right">
+            <div class="footer-player-right-buttons">
+                <img src="assets/Lyrics.svg" alt="">
+                <img src="assets/Queue.svg" alt="">
+                <img src="assets/Connect to a device.svg" alt="">
+                <img src="assets/Volume.svg" alt="">
+                <div class="player-slider">
+                    <input type="range" min="1" max="100" value="40" width="">
+                </div>
+                <img src="assets/Full screen.svg" alt="">
+                <div class="player-slider">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
